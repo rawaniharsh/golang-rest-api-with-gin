@@ -17,6 +17,8 @@ func main() {
 
 	r.GET("/doctors", controllers.FindDoctors)
 
+	r.POST("/doctors", controllers.CreateDoctors)
+
 	models.ConnectDatabase()
 
 	r.Run()
